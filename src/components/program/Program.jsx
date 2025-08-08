@@ -4,11 +4,8 @@ import program1 from '../../assets/program-1.png'
 import program2 from '../../assets/program-2.png'
 import program3 from '../../assets/program-3.png'
 import programicon1 from '../../assets/program-icon-1.png'
-import programicon2 from '../../assets/program-icon-1.png'
-import programicon3 from '../../assets/program-icon-1.png'
-
-
-
+import programicon2 from '../../assets/program-icon-2.png'
+import programicon3 from '../../assets/program-icon-3.png'
 
 
 
