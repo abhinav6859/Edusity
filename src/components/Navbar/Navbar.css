@@ -25,3 +25,55 @@ ul li {
     background-color: rgb(15, 27, 153) ;
     transition: 0.5%;
 }
+.menu-icon {
+    display: none;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    ul {
+        padding: 10px 0;
+    }
+    ul li {
+        margin: 10px 0;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav ul li {
+        font-size: 14px;
+        margin: 10px 15px;
+    }
+}
+@media (max-width: 840px) {
+
+    nav {
+        padding: 15px 0;
+    }
+    nav ul  {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0;
+        
+        width: 200px;
+        z-index: -1;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+
+    }
+    .menu-icon {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .mobile-menu {
+        right: -200px;
+    }
+}

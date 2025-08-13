@@ -46,3 +46,15 @@ html{
   background-color: black;
   color: white;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
