@@ -11,12 +11,18 @@ const Navbar = () => {
             window.scrollY > 70 ? setSticky(true): setSticky(false)
         })
     },[])
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const toggleMenu = () => {
+        mobileMenuOpen ? setMobileMenuOpen(false) : setMobileMenuOpen(true);
+    }
+
     return (
 
         <nav className={`container ${sticky? "dark-nav": ""}`}>
 
             <img src={logo} alt="" className='logo' />
-            <ul>
+            <ul className={mobileMenuOpen ? "" : "mobile-menu"}>
 
                 <li><a href="#hero">Home</a></li>
                 <li> <a href="#programs" >Programs</a> </li>
@@ -28,7 +34,7 @@ const Navbar = () => {
 
                 <li><button className='btn'> <a href="#Contact"> Contact Us</a> </button></li>
             </ul>
-<img src={menu_icon} alt="" className='menu-icon' onClick={togglemenu}/>
+            <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
         </nav>
 
     )

@@ -4,12 +4,12 @@ import aboutImage from "../../assets/about.png"
 import playIcon from "../../assets/play-icon.png"
 
 
-const About = () => {
+const About = ({setIsVideoVisible}) => {
   return (
     <div className='about'>
       <div className="about-left">
         <img src={aboutImage} className='about-img' alt="" />
-        <img src={playIcon} className='play-icon' alt="" />
+        <img src={playIcon} className='play-icon' alt="" onClick={() => setIsVideoVisible(true)} />
 
       </div>
       <div id='about' className="about-right">

@@ -72,6 +72,8 @@ ul li {
         display: block;
         width: 30px;
         cursor: pointer;
+        position: fixed;
+        right: 10%;
     }
     .mobile-menu {
         right: -200px;
